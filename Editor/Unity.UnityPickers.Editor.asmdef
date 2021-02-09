@@ -1,0 +1,16 @@
+{
+    "name": "Unity.UnityPickers.Editor",
+    "references": [
+        "Unity.UnityPickers"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
