@@ -591,7 +591,7 @@ namespace UnityPickers
 		{
 			// keyboard control when windown is in picker mode
 			var evt = Event.current;
-			if (evt.type != EventType.keyDown)
+			if (evt.type != EventType.KeyDown)
 			{
 				return;
 			}
