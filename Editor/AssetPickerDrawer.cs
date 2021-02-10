@@ -12,7 +12,25 @@ namespace UnityPickers
 		{
 			var assetType = fieldInfo.FieldType;
 			if (assetType.IsUnityCollection())
-				assetType = assetType.GetElementType();
+			{
+				var tempType = assetType.GetElementType();
+				if (tempType == null)
+                {
+					System.Type[] genericTypes = assetType.GetGenericArguments();
+                    if (genericTypes.Length > 0)
+                    {
+                        assetType = genericTypes[0];
+                    }
+                    else
+                    {
+						assetType = null;
+                    }
+                }
+				else
+                {
+					assetType = tempType;
+                }
+			}
 
 			if (assetType == null)
 				return;
