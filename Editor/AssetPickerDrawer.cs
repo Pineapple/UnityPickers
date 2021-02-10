@@ -5,7 +5,6 @@ using UnityPickers.Utility;
 namespace UnityPickers
 {
 	[CustomPropertyDrawer(typeof(AssetPickerAttribute))]
-	[CustomPropertyDrawer(typeof(ScriptableObject), true)]
 	public class AssetPickerDrawer : PropertyDrawer
 	{
 		public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
